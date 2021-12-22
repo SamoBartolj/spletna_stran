@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    
+    <title>VirtualBox</title>
+    <link rel="icon" href="slike/Virtualbox_logo.png" type="image/icon type">
+</head>
+<body>
+    <h1 class="glavni_naslov">VirtualBox</h1>
+
+    <!--Nav bar-->
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand"><img src="slike/Virtualbox_logo.png" alt="" width="55px" height="55px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="izdelava.html">Izdelava</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tips_and_tricks.html">Tips and Tricks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ostalo.html">Ostalo</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+      </div>
+
+    <!--Text-->
+    <div class="container-sm">
+        <div class="opis"  >
+            <div class="text">
+                <h1>1. Nameščanje OS v VirtualBox</h1>
+                <p class="paragraf">Za to predstavitev vam bom pokazal kako namestiti operacijski sistem Linux Ubuntu na virtualno mašino.</p>
+
+                <h2>1.1 Nameščanje VirtualBox-a na računalnik</h2>
+
+                <p class="paragraf">Za namestitev VirtualBox-a moramo najprej obiskati spletno mesto <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> in si prenesti najnovejšo različico za vaš operacijski sistem.</p>
+
+                <p class="paragraf">Ko si prenesemo VirtualBox zaženemo VirtualBox.exe.</p>
+
+                <p class="paragraf">Po zagonu VirtualBox.exe se vam odpre namestitveni čarovnik. </p>
+
+                <img class="slike" src="slike/Capture.PNG" alt="Namestitveni čarovnik">
+
+                <p class="paragraf">Pritisnite »next« in izberite mesto na katero se vam bo naložil VirtualBox.</p>
+
+                <img class="slike" src="slike/Capture1.PNG" alt="Mesto namestitve">
+
+                <p class="paragraf">Pritisnite »next«, odprlo se vam bo novo okno tukaj pustite vse tako kot je bilo. Nato pritisnite »next« in nato »Finish«. Ko se vam program naloži ga zaženite.</p>
+
+                <img class="slike" src="slike/Capture4.PNG" alt="Konec namestitve">
+
+                <h2>1.2 Nameščanje .iso datoteke</h2>
+
+                <p class="paragraf">Če želimo naložiti operacijski sistem bomo rabili iso sliko operacijskega sistema. V mojem primeru je to Linux Ubuntu. Odidemo na spletno stran od <a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu-ja</a> in gremo pod zavihek »download«  Izberemo katero različico ubunutaja bomo naložili in kliknemo »download«</p>
+
+                <img class="slike2" src="slike/Capture5.PNG" alt="Ubuntu download">
+
+                <h2>2. Priprava prostora za nameščanje OS v Virtual Box</h2>
+
+                <p class="paragraf">Ko odpremo VirtualBox se nam prikaže začetno okno. Iz začetnega okna lahko uvažamo, izvažamo, dodajamo ali ustvarjamo nove operacijske sisteme. Pod zavihkom »Prefrences « lahko spreminjamo različne nastavitve, a za naš operacijski sistem ne potrebujemo spreminjati nobenih nastavitev.</p>
+
+                <img class="slike2" src="slike/Capture6.PNG" alt="Začetno okno">
+
+                <h3>2.1 Določanje imena</h3>
+
+                <p class="paragraf">Za nameščanje novega operacijskega sistema pritisnemo »New« v začetnem oknu. Odprlo se vam bo novo okno, tukaj določite ime vašemu projektu, izberite lokacijo kamor se vam bo projekt shranil, na koncu pa izberite še vrsto in različico operacijskega sistema katerega želite namestit.</p>
+
+                <img class="slike" src="slike/Capture7.PNG" alt="Poimenovanje projekta">
+
+                <h3>2.2 Določanje RAM-a</h3>
+
+                <p class="paragraf">Na novem oknu določimo koliko vašega pomnilnika(RAM) želite nameniti operacijskemu sistemu. Če ima vaš računalnik 8 GB RAM-a potem vam svetujem da virtualni mašini namenite 2 GB RAM-a. Količino RAM-a pa lahko vedno spremenimo kasneje v nastavitvah.</p>
+
+                <img class="slike" src="slike/Capture8.PNG" alt="Določanje RAM-a">
+
+                <h3>2.3 Določanje način shranjevanja</h3>
+
+                <p class="paragraf">Na naslednji strani lahko izberemo kako bomo shranjevali podatke. Lahko jih shranjujemo direktno na disk našega računalnika, kar osebno odsvetujem, ker v primeru, da si naložite kakršno koli zlonamerno programsko opremo se vam lahko razširi po celem disku. Osebno priporočam ustvarjanje virtualnega diska, saj v primeru, da naložite kakršno koli zlonamerno programsko opremo lahko samo izbrišete virtualni disk in s tem izbrišete tudi zlonamerno programsko.</p>
+
+                <img class="slike" src="slike/Capture9.PNG" alt="Način shrabjevanja">
+
+                <p class="paragraf">Na naslednjem oknu moramo izbrati v kakšnem formatu bomo shranjevali podatke. VDI ali Virtual Disk Image je osnovni format za VirtualBox, VHD ali Virtual Hard Disk je format, ki je ustvarjen za Microsoftove virtualizacijske produkte. Format VMDK ali Virtual Machine Disk je format narejen specifično za VMware programe. V našem primeru bomo uporabljali format VDI.</p>
+
+                <img class="slike" src="slike/Capture10.PNG" alt="Izbiranje formata">  
+
+                <p class="paragraf">Zdaj moramo izbrati ali bo naš disk dinamično dodeljen ali bo fiksne velikosti. Dinamično dodeljen se lahko razširi in zavzame več prostora če je to potrebno. Disk fiksne velikosti pa zavzame samo toliko prostora kot mu je dodeljeno. Za naše potrebe bomo izbrali dinamično dodeljen disk v primeru da bomo kdaj rabili več prostora.</p>
+
+                <img class="slike" src="slike/Capture11.PNG" alt="Določanje načina shranjevanja"> 
+
+                <h3>2.3 Določanje velikosti diska</h3>
+
+                <p class="paragraf">Zdaj bomo določili koliko prostora bomo dodelili našemu virtualnemu operacijskemu sistemu. V mojem primeru bo to 10 GB. Vi pa namenite kolikor želite. </p>
+
+                <img class="slike" src="slike/Capture12.PNG" alt="Določevanje velikosti prostora">
+
+                <p class="paragraf">Zdaj smo pripravili prostor v katerega lahko naložimo operacijski sistem. Zdaj bomo morali dodati .iso sliko operacijskega sistema v prostor, ki smo ga pripravili. </p>
+
+                <h2>3. Nameščanje OS v VirtualBox</h2>
+
+                <p class="paragraf">Postavimo se v okno z našim projektom in pritisnemo »Settings«.</p>
+
+                <img class="slike2" src="slike/Capture13.PNG" alt="Okno z projektom">
+
+                <p class="paragraf">Tukaj kliknemo »Storage« in pod »Controller: IDE« kliknemo »Empty« nato ob strani kliknemo ikono DVD-ja. </p>
+
+                <img class="slike" src="slike/Capture14.PNG" alt=": »Storage« nastavitve">
+
+                <p class="paragraf">Tam kliknite »choose a disk file« in poiščite kam ste shranili .iso datoteko. Ko ste dodali .iso datoteko ste namestili vaš OS. Seveda pa morate po zagonu nastaviti OS. </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer1">
+        <p>Copyright <span>&#169;</span> Samo Bartolj 2021, Vse pravice pridržane </p>
+    </div>
+</footer>
+</html>
